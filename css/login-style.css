@@ -1,0 +1,81 @@
+@font-face {
+  font-family: vazir;
+  src: url("font/AnyConv.com__Vazir-Regular.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: vazir;
+  direction: rtl;
+  background-color: rgb(217, 212, 230);
+}
+.news {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #444;
+  height: auto;
+  width: max-content;
+  padding: 20px;
+  margin: 50px auto;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #4444;
+  padding: 10px;
+}
+.image {
+  padding: 10px;
+}
+.login h1 {
+  color: blue;
+  margin: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid gray;
+  font-size: 25px;
+  transition: 1s;
+}
+.login h1:hover {
+  font-size: 30px;
+  border-color: black;
+}
+input[type="text"],
+input[type="password"] {
+  margin: 20px;
+  padding: 10px 14px;
+  border-radius: 24px;
+  border: 1px solid blue;
+  width: 250px;
+  transition: 1s;
+}
+input[type="submit"] {
+  margin: 20px;
+  padding: 10px 14px;
+  border-radius: 24px;
+  border: 1px solid blue;
+  width: 100px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.7 s;
+}
+input[type="submit"] :hover {
+}
+label {
+  color: black;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  width: 300px;
+}
+@media (max-width: 720px) {
+  .image {
+    display: none;
+  }
+}
